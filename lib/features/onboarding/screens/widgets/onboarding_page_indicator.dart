@@ -11,17 +11,22 @@ class OnboardingPageIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final onboardingController = context.read<OnboardingController>();
-    return SmoothPageIndicator(
-      controller: onboardingController.pageController,
-      count: 3,
-      effect: SlideEffect(
-        spacing: CustomSizes.sm,
-        radius: CustomSizes.borderRadiusSm,
-        dotWidth: CustomSizes.lg,
-        dotHeight: CustomSizes.xs,
-        paintStyle: PaintingStyle.fill,
-        dotColor: CustomColors.darkGrey,
-        activeDotColor: CustomColors.white,
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        vertical: CustomSizes.spaceBtwSectionsLg,
+      ),
+      child: SmoothPageIndicator(
+        controller: onboardingController.pageController,
+        count: 3,
+        effect: SlideEffect(
+          spacing: CustomSizes.sm,
+          radius: CustomSizes.borderRadiusSm,
+          dotWidth: CustomSizes.lg,
+          dotHeight: CustomSizes.xs,
+          paintStyle: PaintingStyle.fill,
+          dotColor: CustomColors.darkGrey,
+          activeDotColor: CustomColors.white,
+        ),
       ),
     );
   }

@@ -27,18 +27,14 @@ class OnboardingPage extends StatelessWidget {
         ),
 
         // Indicator
-        const SizedBox(height: CustomSizes.spaceBtwSectionsLg),
         const OnboardingPageIndicator(),
 
-        // Title
-        const SizedBox(height: CustomSizes.spaceBtwSectionsLg),
+        // Title & Subtitle
         Text(
           title,
           style: Theme.of(context).textTheme.headlineMedium,
           textAlign: TextAlign.center,
         ),
-
-        // Subtitle
         const SizedBox(height: CustomSizes.spaceBtwSections),
         Text(
           subTitle,
