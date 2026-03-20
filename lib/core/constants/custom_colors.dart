@@ -4,7 +4,8 @@ class CustomColors {
   CustomColors._();
 
   //app basic colors
-  static const Color primary = Color(0xFF4b68ff);
+  static const Color primary = Color(0xff8875ff);
+  static const Color onPrimary = Color(0xffffffff);
   static const Color secondary = Color(0xFFFFE24B);
   static const Color accent = Color(0xFFb0c7ff);
 
