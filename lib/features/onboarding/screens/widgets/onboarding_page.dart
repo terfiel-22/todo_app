@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/core/constants/custom_sizes.dart';
 import 'package:todo_app/core/utils/device/device_utility.dart';
-import 'package:todo_app/features/onboarding/screens/widgets/onboarding_page_indicator.dart';
 
 class OnboardingPage extends StatelessWidget {
   final String image;
@@ -26,10 +25,8 @@ class OnboardingPage extends StatelessWidget {
           image: AssetImage(image),
         ),
 
-        // Indicator
-        const OnboardingPageIndicator(),
-
         // Title & Subtitle
+        const SizedBox(height: CustomSizes.spaceBtwSectionsLg),
         Text(
           title,
           style: Theme.of(context).textTheme.headlineMedium,

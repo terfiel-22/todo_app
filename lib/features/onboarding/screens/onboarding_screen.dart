@@ -4,6 +4,7 @@ import 'package:todo_app/core/constants/text_strings.dart';
 import 'package:todo_app/core/widgets/page_container/page_container.dart';
 import 'package:todo_app/features/onboarding/screens/widgets/onboarding_navigation.dart';
 import 'package:todo_app/features/onboarding/screens/widgets/onboarding_page.dart';
+import 'package:todo_app/features/onboarding/screens/widgets/onboarding_page_indicator.dart';
 import 'package:todo_app/features/onboarding/screens/widgets/onboarding_page_view.dart';
 import 'package:todo_app/features/onboarding/screens/widgets/onboarding_skip.dart';
 
@@ -36,6 +37,9 @@ class OnboardingScreen extends StatelessWidget {
                 ),
               ],
             ),
+
+            // Onboarding Page Indicator
+            const OnboardingPageIndicator(),
 
             // Skip Button
             const OnboardingSkip(),
