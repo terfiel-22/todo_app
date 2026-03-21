@@ -13,7 +13,7 @@ class ElevatedButtonAppTheme {
       disabledBackgroundColor: Colors.grey,
       side: const BorderSide(color: CustomColors.primary),
       textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
-      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+      padding: const EdgeInsets.all(CustomSizes.lg),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(CustomSizes.borderRadiusSm),
       ),
@@ -28,7 +28,7 @@ class ElevatedButtonAppTheme {
       disabledBackgroundColor: Colors.grey,
       side: const BorderSide(color: CustomColors.primary),
       textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
-      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+      padding: const EdgeInsets.all(CustomSizes.lg),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(CustomSizes.borderRadiusSm),
       ),

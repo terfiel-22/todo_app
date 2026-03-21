@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/core/theme/widget_themes/elevated_button_app_theme.dart';
+import 'package:todo_app/core/theme/widget_themes/outlined_button_app_theme.dart';
 import 'package:todo_app/core/theme/widget_themes/text_app_theme.dart';
 import 'package:todo_app/core/theme/widget_themes/text_button_app_theme.dart';
 
@@ -14,6 +15,7 @@ class CustomTheme {
     scaffoldBackgroundColor: Colors.white,
     textTheme: TextAppTheme.lightTheme,
     elevatedButtonTheme: ElevatedButtonAppTheme.lightTheme,
+    outlinedButtonTheme: OutlinedButtonAppTheme.lightTheme,
     textButtonTheme: TextButtonAppTheme.lightTheme,
   );
 
@@ -25,6 +27,7 @@ class CustomTheme {
     scaffoldBackgroundColor: Colors.black,
     textTheme: TextAppTheme.darkTheme,
     elevatedButtonTheme: ElevatedButtonAppTheme.darkTheme,
+    outlinedButtonTheme: OutlinedButtonAppTheme.darkTheme,
     textButtonTheme: TextButtonAppTheme.darkTheme,
   );
 }
