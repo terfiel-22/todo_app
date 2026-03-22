@@ -19,7 +19,7 @@ class OnboardingNavigation extends StatelessWidget {
             child: Text("BACK"),
           ),
           ElevatedButton(
-            onPressed: onboardingController.nextPage,
+            onPressed: () => onboardingController.nextPage(context),
             child: Text(
               context.watch<OnboardingController>().currentPageIndex == 2
                   ? "GET STARTED"

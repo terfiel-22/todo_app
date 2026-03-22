@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_app/core/theme/custom_theme.dart';
 import 'package:todo_app/core/theme/theme_provider.dart';
-import 'package:todo_app/features/onboarding/screens/onboarding_screen.dart';
+import 'package:todo_app/routes/app_routes.dart';
 
 class TodoApp extends StatelessWidget {
   const TodoApp({super.key});
@@ -15,7 +15,7 @@ class TodoApp extends StatelessWidget {
       themeMode: context.watch<ThemeProvider>().currentTheme,
       theme: CustomTheme.lightTheme,
       darkTheme: CustomTheme.darkTheme,
-      home: OnboardingScreen(),
+      routes: AppRoutes.routes,
     );
   }
 }

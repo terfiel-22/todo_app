@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/core/utils/navigation/navigation_utility.dart';
+import 'package:todo_app/routes/route_names.dart';
 
 class OnboardingController with ChangeNotifier {
   final _pageController = PageController();
@@ -24,10 +26,14 @@ class OnboardingController with ChangeNotifier {
     }
   }
 
-  void nextPage() {
+  void nextPage(BuildContext context) {
     if (_currentPageIndex == 2) {
       // save to local storage isFirstTime = false
       // go to login screen
+      NavigationUtility.navigationPushNamed(
+        context: context,
+        routeName: RouteNames.startScreen,
+      );
     } else {
       _currentPageIndex++;
       _pageController.animateToPage(
