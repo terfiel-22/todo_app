@@ -1,23 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class NavigationUtility {
   NavigationUtility._();
 
-  static void navigationPop(BuildContext context) {
-    Navigator.of(context).pop();
-  }
-
   static void navigationPush({
-    required BuildContext context,
-    required Widget widget,
-  }) {
-    Navigator.of(context).push(MaterialPageRoute(builder: (context) => widget));
-  }
-
-  static void navigationPushNamed({
     required BuildContext context,
     required String routeName,
   }) {
-    Navigator.pushNamed(context, routeName);
+    context.push(routeName);
+  }
+
+  static void navigationPop({
+    required BuildContext context,
+    required String routeName,
+  }) {
+    context.pop(routeName);
+  }
+
+  static void navigateTo({
+    required BuildContext context,
+    required String routeName,
+  }) {
+    context.go(routeName);
   }
 }

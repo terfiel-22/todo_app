@@ -9,13 +9,13 @@ class TodoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: "To-do App",
       debugShowCheckedModeBanner: false,
       themeMode: context.watch<ThemeProvider>().currentTheme,
       theme: CustomTheme.lightTheme,
       darkTheme: CustomTheme.darkTheme,
-      routes: AppRoutes.routes,
+      routerConfig: AppRoutes.routes,
     );
   }
 }

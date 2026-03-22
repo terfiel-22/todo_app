@@ -30,7 +30,7 @@ class OnboardingController with ChangeNotifier {
     if (_currentPageIndex == 2) {
       // save to local storage isFirstTime = false
       // go to login screen
-      NavigationUtility.navigationPushNamed(
+      NavigationUtility.navigateTo(
         context: context,
         routeName: RouteNames.startScreen,
       );
