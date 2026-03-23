@@ -17,7 +17,7 @@ class RegistrationScreen extends StatelessWidget {
           children: [
             // Title
             Text(
-              TextStrings.createAccount,
+              TextStrings.createAccountHeader,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],

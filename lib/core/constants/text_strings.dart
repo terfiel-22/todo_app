@@ -16,6 +16,19 @@ class TextStrings {
   static String startScreenTitle = "Welcome to MyTodo";
   static String startScreenSubTitle =
       "Please login to your account or create new account to continue";
-  static String login = "LOGIN";
-  static String createAccount = "CREATE ACCOUNT";
+  static String loginHeader = "LOGIN";
+  static String createAccountHeader = "CREATE ACCOUNT";
+  static String usernamePlaceholder = "Enter your username";
+  static String usernameLabel = "Username";
+  static String passwordPlaceholder = "***********************";
+  static String passwordLabel = "Password";
+  static String confirmPasswordPlaceholder = "***********************";
+  static String confirmPasswordLabel = "Confirm Password";
+  static String dontHaveAnAccount = "Don't have an account?";
+  static String alreadyHaveAnAccount = "Already have an account?";
+  static String loginButton = "Login";
+  static String loginGoogleButton = "Login with Google";
+  static String registerButton = "Register";
+  static String registerGoogleButton = "Register with Google";
+  static String authDividerText = "or";
 }

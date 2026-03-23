@@ -5,22 +5,25 @@ class CustomTextFormField extends StatelessWidget {
   final TextEditingController controller;
   final String labelText;
   final String placeholderText;
+  final bool obscureText;
   const CustomTextFormField({
     super.key,
     required this.controller,
     required this.labelText,
     required this.placeholderText,
+    this.obscureText = false,
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      spacing: CustomSizes.spaceBtwItems,
+      spacing: CustomSizes.spaceBtwInputFieldsAndLabel,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(labelText),
         TextFormField(
           controller: controller,
+          obscureText: obscureText,
           decoration: InputDecoration(hintText: placeholderText),
         ),
       ],

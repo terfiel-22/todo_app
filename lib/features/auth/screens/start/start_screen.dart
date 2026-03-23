@@ -47,7 +47,7 @@ class StartScreen extends StatelessWidget {
                       context: context,
                       routeName: RouteNames.loginScreen,
                     ),
-                    child: Text(TextStrings.login),
+                    child: Text(TextStrings.loginHeader),
                   ),
                 ),
                 SizedBox(
@@ -57,7 +57,7 @@ class StartScreen extends StatelessWidget {
                       context: context,
                       routeName: RouteNames.registrationScreen,
                     ),
-                    child: Text(TextStrings.createAccount),
+                    child: Text(TextStrings.createAccountHeader),
                   ),
                 ),
               ],

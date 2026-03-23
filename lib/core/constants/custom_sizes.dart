@@ -52,6 +52,7 @@ class CustomSizes {
 
   //input field
   static const double inputFieldRadius = 4.0;
+  static const double spaceBtwInputFieldsAndLabel = 8.0;
   static const double spaceBtwInputFields = 32.0;
 
   //Card sizes
