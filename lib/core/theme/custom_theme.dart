@@ -5,6 +5,7 @@ import 'package:todo_app/core/theme/widget_themes/icon_button_app_theme.dart';
 import 'package:todo_app/core/theme/widget_themes/outlined_button_app_theme.dart';
 import 'package:todo_app/core/theme/widget_themes/text_app_theme.dart';
 import 'package:todo_app/core/theme/widget_themes/text_button_app_theme.dart';
+import 'package:todo_app/core/theme/widget_themes/text_form_field_app_theme.dart';
 
 class CustomTheme {
   CustomTheme._();
@@ -21,6 +22,7 @@ class CustomTheme {
     iconButtonTheme: IconButtonAppTheme.lightTheme,
     outlinedButtonTheme: OutlinedButtonAppTheme.lightTheme,
     textButtonTheme: TextButtonAppTheme.lightTheme,
+    inputDecorationTheme: TextFormFieldAppTheme.lightTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -35,5 +37,6 @@ class CustomTheme {
     outlinedButtonTheme: OutlinedButtonAppTheme.darkTheme,
     iconButtonTheme: IconButtonAppTheme.darkTheme,
     textButtonTheme: TextButtonAppTheme.darkTheme,
+    inputDecorationTheme: TextFormFieldAppTheme.darkTheme,
   );
 }
