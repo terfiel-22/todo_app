@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/core/constants/text_strings.dart';
+import 'package:todo_app/core/widgets/appbar/custom_appbar.dart';
 import 'package:todo_app/core/widgets/page_container/page_container.dart';
 
 class RegistrationScreen extends StatelessWidget {
@@ -6,6 +8,20 @@ class RegistrationScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: PageContainer(child: Text("Registration")));
+    return Scaffold(
+      appBar: CustomAppbar(),
+      body: PageContainer(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Title
+            Text(
+              TextStrings.createAccount,
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

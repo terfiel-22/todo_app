@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/core/constants/custom_sizes.dart';
 import 'package:todo_app/core/constants/text_strings.dart';
+import 'package:todo_app/core/utils/navigation/navigation_utility.dart';
 import 'package:todo_app/core/widgets/page_container/page_container.dart';
+import 'package:todo_app/routes/route_names.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
@@ -41,14 +43,20 @@ class StartScreen extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => NavigationUtility.navigationPush(
+                      context: context,
+                      routeName: RouteNames.loginScreen,
+                    ),
                     child: Text(TextStrings.login),
                   ),
                 ),
                 SizedBox(
                   width: double.infinity,
                   child: OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () => NavigationUtility.navigationPush(
+                      context: context,
+                      routeName: RouteNames.registrationScreen,
+                    ),
                     child: Text(TextStrings.createAccount),
                   ),
                 ),

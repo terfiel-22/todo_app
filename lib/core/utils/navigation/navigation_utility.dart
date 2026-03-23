@@ -11,11 +11,8 @@ class NavigationUtility {
     context.push(routeName);
   }
 
-  static void navigationPop({
-    required BuildContext context,
-    required String routeName,
-  }) {
-    context.pop(routeName);
+  static void navigationPop({required BuildContext context}) {
+    context.pop();
   }
 
   static void navigateTo({
