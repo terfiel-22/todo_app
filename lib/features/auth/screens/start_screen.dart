@@ -14,10 +14,9 @@ class StartScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Expanded(
-              child: Container(
-                width: double.infinity,
+              child: Padding(
                 padding: EdgeInsetsGeometry.symmetric(
-                  vertical: CustomSizes.xxl,
+                  vertical: CustomSizes.appBarHeight,
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
