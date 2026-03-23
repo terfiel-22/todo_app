@@ -21,7 +21,7 @@ class CustomTextFormField extends StatelessWidget {
         const SizedBox(height: CustomSizes.md),
         TextFormField(
           controller: controller,
-          decoration: InputDecoration(labelText: placeholderText),
+          decoration: InputDecoration(hintText: placeholderText),
         ),
       ],
     );
