@@ -20,7 +20,7 @@ class AuthDivider extends StatelessWidget {
             endIndent: 5,
           ),
         ),
-        Text(dividerText, style: Theme.of(context).textTheme.labelMedium),
+        Text(dividerText, style: Theme.of(context).textTheme.bodySmall),
         Flexible(
           child: Divider(
             color: isLightMode ? CustomColors.grey : CustomColors.darkGrey,

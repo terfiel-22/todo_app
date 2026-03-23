@@ -15,10 +15,10 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      spacing: CustomSizes.spaceBtwItems,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(labelText),
-        const SizedBox(height: CustomSizes.md),
         TextFormField(
           controller: controller,
           decoration: InputDecoration(hintText: placeholderText),

@@ -51,8 +51,8 @@ class CustomSizes {
   static const double productImageHeight = 160.0;
 
   //input field
-  static const double inputFieldRadius = 12.0;
-  static const double spaceBtwInputFields = 16.0;
+  static const double inputFieldRadius = 4.0;
+  static const double spaceBtwInputFields = 32.0;
 
   //Card sizes
   static const double cardRadiusLg = 16.0;

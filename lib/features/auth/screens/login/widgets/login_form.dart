@@ -16,9 +16,10 @@ class LoginForm extends StatelessWidget {
       key: loginController.loginFormKey,
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          vertical: CustomSizes.spaceBtwSectionsLg,
+          vertical: CustomSizes.spaceBtwSections,
         ),
         child: Column(
+          spacing: CustomSizes.spaceBtwInputFields,
           children: [
             // Username
             CustomTextFormField(
@@ -28,7 +29,6 @@ class LoginForm extends StatelessWidget {
             ),
 
             // Password
-            const SizedBox(height: CustomSizes.spaceBtwSections),
             CustomTextFormField(
               controller: loginController.password,
               labelText: "Password",
@@ -36,7 +36,6 @@ class LoginForm extends StatelessWidget {
             ),
 
             // Button
-            const SizedBox(height: CustomSizes.spaceBtwSectionsLg),
             SizedBox(
               width: DeviceUtility.screenWidth(context),
               child: ElevatedButton(onPressed: () {}, child: Text("Login")),
