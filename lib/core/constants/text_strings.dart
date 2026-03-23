@@ -14,10 +14,11 @@ class TextStrings {
 
   // Authentication
   static String startScreenTitle = "Welcome to MyTodo";
+  static String createAccountButton = "CREATE ACCOUNT";
   static String startScreenSubTitle =
       "Please login to your account or create new account to continue";
   static String loginHeader = "LOGIN";
-  static String createAccountHeader = "CREATE ACCOUNT";
+  static String registrationHeader = "REGISTER";
   static String usernamePlaceholder = "Enter your username";
   static String usernameLabel = "Username";
   static String passwordPlaceholder = "***********************";

@@ -40,7 +40,10 @@ class LoginForm extends StatelessWidget {
             // Button
             SizedBox(
               width: DeviceUtility.screenWidth(context),
-              child: ElevatedButton(onPressed: () {}, child: Text("Login")),
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Text(TextStrings.loginButton),
+              ),
             ),
           ],
         ),
