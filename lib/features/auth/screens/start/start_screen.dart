@@ -43,7 +43,7 @@ class StartScreen extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () => NavigationUtility.navigationPush(
+                    onPressed: () => NavigationUtility.navigateTo(
                       context: context,
                       routeName: RouteNames.loginScreen,
                     ),
@@ -53,7 +53,7 @@ class StartScreen extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: OutlinedButton(
-                    onPressed: () => NavigationUtility.navigationPush(
+                    onPressed: () => NavigationUtility.navigateTo(
                       context: context,
                       routeName: RouteNames.registrationScreen,
                     ),

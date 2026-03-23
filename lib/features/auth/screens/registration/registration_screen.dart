@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/core/constants/text_strings.dart';
 import 'package:todo_app/core/widgets/appbar/custom_appbar.dart';
 import 'package:todo_app/core/widgets/page_container/page_container.dart';
+import 'package:todo_app/routes/route_names.dart';
 
 class RegistrationScreen extends StatelessWidget {
   const RegistrationScreen({super.key});
@@ -9,7 +10,7 @@ class RegistrationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppbar(),
+      appBar: CustomAppbar(backPageName: RouteNames.startScreen),
       body: PageContainer(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -14,30 +14,35 @@ class LoginForm extends StatelessWidget {
 
     return Form(
       key: loginController.loginFormKey,
-      child: Column(
-        children: [
-          // Username
-          CustomTextFormField(
-            controller: loginController.username,
-            labelText: "Username",
-            placeholderText: "Enter your username",
-          ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+          vertical: CustomSizes.spaceBtwSectionsLg,
+        ),
+        child: Column(
+          children: [
+            // Username
+            CustomTextFormField(
+              controller: loginController.username,
+              labelText: "Username",
+              placeholderText: "Enter your username",
+            ),
 
-          // Password
-          const SizedBox(height: CustomSizes.spaceBtwSections),
-          CustomTextFormField(
-            controller: loginController.password,
-            labelText: "Password",
-            placeholderText: "Enter your password",
-          ),
+            // Password
+            const SizedBox(height: CustomSizes.spaceBtwSections),
+            CustomTextFormField(
+              controller: loginController.password,
+              labelText: "Password",
+              placeholderText: "Enter your password",
+            ),
 
-          // Button
-          const SizedBox(height: CustomSizes.spaceBtwSectionsLg),
-          SizedBox(
-            width: DeviceUtility.screenWidth(context),
-            child: ElevatedButton(onPressed: () {}, child: Text("Login")),
-          ),
-        ],
+            // Button
+            const SizedBox(height: CustomSizes.spaceBtwSectionsLg),
+            SizedBox(
+              width: DeviceUtility.screenWidth(context),
+              child: ElevatedButton(onPressed: () {}, child: Text("Login")),
+            ),
+          ],
+        ),
       ),
     );
   }

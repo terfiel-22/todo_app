@@ -6,11 +6,13 @@ import 'package:todo_app/core/utils/navigation/navigation_utility.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   final bool showBackButton;
+  final String? backPageName;
   final bool showThemeModeButton;
   const CustomAppbar({
     super.key,
     this.showBackButton = true,
     this.showThemeModeButton = false,
+    this.backPageName,
   });
 
   @override
@@ -18,8 +20,12 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       leading: showBackButton
           ? IconButton(
-              onPressed: () =>
-                  NavigationUtility.navigationPop(context: context),
+              onPressed: () => backPageName != null
+                  ? NavigationUtility.navigateTo(
+                      context: context,
+                      routeName: backPageName!,
+                    )
+                  : NavigationUtility.navigationPop(context: context),
               icon: Icon(Icons.chevron_left),
             )
           : const SizedBox(),
