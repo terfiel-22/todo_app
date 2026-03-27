@@ -11,7 +11,7 @@ class OnboardingSkip extends StatelessWidget {
 
     return TextButton(
       onPressed: onboardingController.skipPage,
-      child: Text("SKIP"),
+      child: const Text("SKIP"),
     );
   }
 }

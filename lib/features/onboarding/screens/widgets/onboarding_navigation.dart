@@ -16,7 +16,7 @@ class OnboardingNavigation extends StatelessWidget {
         children: [
           TextButton(
             onPressed: onboardingController.backPage,
-            child: Text("BACK"),
+            child: const Text("BACK"),
           ),
           ElevatedButton(
             onPressed: () => onboardingController.nextPage(context),

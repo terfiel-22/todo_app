@@ -19,7 +19,7 @@ class OnboardingController with ChangeNotifier {
       _currentPageIndex--;
       _pageController.animateToPage(
         _currentPageIndex,
-        duration: Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.easeIn,
       );
       notifyListeners();
@@ -38,7 +38,7 @@ class OnboardingController with ChangeNotifier {
       _currentPageIndex++;
       _pageController.animateToPage(
         _currentPageIndex,
-        duration: Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.easeIn,
       );
       notifyListeners();
@@ -49,7 +49,7 @@ class OnboardingController with ChangeNotifier {
     _currentPageIndex = 2;
     _pageController.animateToPage(
       _currentPageIndex,
-      duration: Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 300),
       curve: Curves.easeIn,
     );
     notifyListeners();

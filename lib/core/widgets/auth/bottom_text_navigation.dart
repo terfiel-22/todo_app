@@ -23,7 +23,7 @@ class BottomTextNavigation extends StatelessWidget {
               text: question,
               style: Theme.of(context).textTheme.labelMedium,
             ),
-            TextSpan(text: " "),
+            const TextSpan(text: " "),
             TextSpan(
               text: linkText,
               style: Theme.of(context).textTheme.labelLarge,

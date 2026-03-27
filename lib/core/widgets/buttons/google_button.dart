@@ -15,7 +15,9 @@ class GoogleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: CustomSizes.spaceBtwSections),
+      padding: const EdgeInsets.symmetric(
+        vertical: CustomSizes.spaceBtwSections,
+      ),
       width: DeviceUtility.screenHeight(context),
       child: OutlinedButton.icon(
         onPressed: onPressed,

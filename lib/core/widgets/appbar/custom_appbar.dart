@@ -26,7 +26,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
                       routeName: backPageName!,
                     )
                   : NavigationUtility.navigationPop(context: context),
-              icon: Icon(Icons.chevron_left),
+              icon: const Icon(Icons.chevron_left),
             )
           : const SizedBox(),
       actions: [
@@ -45,5 +45,5 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }

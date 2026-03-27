@@ -17,7 +17,7 @@ class StartScreen extends StatelessWidget {
           children: [
             Expanded(
               child: Padding(
-                padding: EdgeInsetsGeometry.symmetric(
+                padding: const EdgeInsetsGeometry.symmetric(
                   vertical: CustomSizes.appBarHeight,
                 ),
                 child: Column(

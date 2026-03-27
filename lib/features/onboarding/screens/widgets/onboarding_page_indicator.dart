@@ -20,7 +20,7 @@ class OnboardingPageIndicator extends StatelessWidget {
         child: SmoothPageIndicator(
           controller: onboardingController.pageController,
           count: 3,
-          effect: SlideEffect(
+          effect: const SlideEffect(
             spacing: CustomSizes.sm,
             radius: CustomSizes.borderRadiusSm,
             dotWidth: CustomSizes.lg,
