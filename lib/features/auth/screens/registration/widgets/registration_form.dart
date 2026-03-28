@@ -3,8 +3,10 @@ import 'package:provider/provider.dart';
 import 'package:todo_app/core/constants/custom_sizes.dart';
 import 'package:todo_app/core/constants/text_strings.dart';
 import 'package:todo_app/core/utils/device/device_utility.dart';
+import 'package:todo_app/core/utils/navigation/navigation_utility.dart';
 import 'package:todo_app/core/widgets/text_form_field/custom_text_form_field.dart';
 import 'package:todo_app/features/auth/controllers/registration_controller.dart';
+import 'package:todo_app/routes/route_names.dart';
 
 class RegistrationForm extends StatelessWidget {
   const RegistrationForm({super.key});
@@ -49,7 +51,14 @@ class RegistrationForm extends StatelessWidget {
             SizedBox(
               width: DeviceUtility.screenWidth(context),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  registrationController.register();
+
+                  NavigationUtility.navigateTo(
+                    context: context,
+                    routeName: RouteNames.homeScreen,
+                  );
+                },
                 child: Text(TextStrings.registerButton),
               ),
             ),

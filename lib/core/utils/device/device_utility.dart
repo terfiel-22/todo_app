@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/core/constants/custom_sizes.dart';
 
 class DeviceUtility {
   DeviceUtility._();
@@ -24,6 +25,6 @@ class DeviceUtility {
   }
 
   static double getBottomNavigationBarHeight() {
-    return kBottomNavigationBarHeight;
+    return kBottomNavigationBarHeight + CustomSizes.bottomNavBarAdd;
   }
 }

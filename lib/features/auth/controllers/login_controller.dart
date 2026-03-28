@@ -5,5 +5,7 @@ class LoginController with ChangeNotifier {
   final username = TextEditingController();
   final password = TextEditingController();
 
-  Future<void> login() async {}
+  Future<void> login() async {
+    await Future.delayed(const Duration(seconds: 30));
+  }
 }

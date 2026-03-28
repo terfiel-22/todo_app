@@ -70,4 +70,10 @@ class CustomSizes {
 
   //Grid view spacing
   static const double gridViewSpacing = 16.0;
+
+  // Bottom Nav Bar additional height
+  static const double bottomNavBarAdd = 16.0;
+
+  // Floating action button diameter
+  static const double fABDiameter = 64.0;
 }

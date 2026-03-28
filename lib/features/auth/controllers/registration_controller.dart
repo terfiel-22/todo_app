@@ -6,5 +6,7 @@ class RegistrationController with ChangeNotifier {
   final password = TextEditingController();
   final confirmPassword = TextEditingController();
 
-  Future<void> register() async {}
+  Future<void> register() async {
+    await Future.delayed(const Duration(seconds: 30));
+  }
 }

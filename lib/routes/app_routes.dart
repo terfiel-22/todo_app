@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:todo_app/features/auth/screens/login/login_screen.dart';
 import 'package:todo_app/features/auth/screens/registration/registration_screen.dart';
 import 'package:todo_app/features/auth/screens/start/start_screen.dart';
+import 'package:todo_app/features/home/screens/home_screen.dart';
 import 'package:todo_app/features/onboarding/screens/onboarding_screen.dart';
 import 'package:todo_app/routes/route_names.dart';
 
@@ -31,6 +32,12 @@ class AppRoutes {
         path: RouteNames.registrationScreen,
         builder: (BuildContext context, GoRouterState state) {
           return const RegistrationScreen();
+        },
+      ),
+      GoRoute(
+        path: RouteNames.homeScreen,
+        builder: (BuildContext context, GoRouterState state) {
+          return const HomeScreen();
         },
       ),
     ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:todo_app/core/constants/custom_colors.dart';
+import 'package:todo_app/core/theme/widget_themes/bottom_navigation_bar_app_theme.dart';
 import 'package:todo_app/core/theme/widget_themes/elevated_button_app_theme.dart';
 import 'package:todo_app/core/theme/widget_themes/icon_button_app_theme.dart';
 import 'package:todo_app/core/theme/widget_themes/outlined_button_app_theme.dart';
@@ -23,6 +24,7 @@ class CustomTheme {
     outlinedButtonTheme: OutlinedButtonAppTheme.lightTheme,
     textButtonTheme: TextButtonAppTheme.lightTheme,
     inputDecorationTheme: TextFormFieldAppTheme.lightTheme,
+    bottomNavigationBarTheme: BottomNavigationBarAppTheme.lightTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -37,5 +39,6 @@ class CustomTheme {
     iconButtonTheme: IconButtonAppTheme.darkTheme,
     textButtonTheme: TextButtonAppTheme.darkTheme,
     inputDecorationTheme: TextFormFieldAppTheme.darkTheme,
+    bottomNavigationBarTheme: BottomNavigationBarAppTheme.darkTheme,
   );
 }
