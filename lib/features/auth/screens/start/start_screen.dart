@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/core/constants/custom_sizes.dart';
 import 'package:todo_app/core/constants/text_strings.dart';
+import 'package:todo_app/core/layout/guest_page_layout.dart';
 import 'package:todo_app/core/utils/navigation/navigation_utility.dart';
-import 'package:todo_app/core/widgets/page_container/page_container.dart';
 import 'package:todo_app/routes/route_names.dart';
 
 class StartScreen extends StatelessWidget {
@@ -11,7 +11,7 @@ class StartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageContainer(
+      body: GuestPageLayout(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
