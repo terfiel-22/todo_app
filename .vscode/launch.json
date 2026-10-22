@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [ 
         {
+            "name": "TODO APP",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "deviceId": "emulator-5554"
+        },
+        {
             "name": "Chrome",
             "type": "dart",
             "request": "launch", 
